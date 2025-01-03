@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    body{
+      width: 100%;
+      height: 70vh;
+      background-color: hsl(0, 0%, 8%);
+      text-align: center;
+      margin: 100px auto;
+    }
+    .container{
+      width: 100%;
+      max-width: 350px;
+      padding: 10px;
+      margin: 0 auto ;
+      transform: scale(0.8);
+      background-color: hsl(0, 0%, 12%);
+      border-radius: 15px;
+    }
+    .profile{
+      align-items: center;
+      padding: 10px;
+    }
+    .profil-image img{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    h1{
+      color: hsl(0, 0%, 100%);
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 8px;
+    }
+    h3{
+      color: hsl(75, 94%, 57%);
+      font-weight: 400;
+      margin-bottom: 27px;
+    }
+    
+    .profile-info p{
+      color: #ffffffd2;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    .social-links{
+      margin-top: 15px; 
+      display: flex;  
+      flex-direction: column;
+    }
+    .social-links a{
+      color: hsl(0, 0%, 100%);
+      font-size: 15px;
+      text-decoration: none;
+      font-weight: 570;
+    }
+    .item{
+      margin: 10px;
+      padding: 10px;
+      border: none;
+      border-radius: 7px;
+      background-color: rgba(221, 204, 204, 0.137);
+    }
+    .attribution{
+      color: hsl(0, 0%, 100%);
+    }
+    @media (max-width: 580px) {
+      .container {
+        width: 90%;
+        max-width: none;
+        padding: 15px;
+        transform: scale(1);
+        background-color: hsl(0, 0%, 15%);
+      }
+    
+      .profil-image img {
+        width: 80px;
+        height: 80px;
+      }
+    
+      h1 {
+        font-size: 1.5rem;
+      }
+    
+      h3 {
+        font-size: 1rem;
+      }
+    
+      .profile-info p {
+        font-size: 14px;
+      }
+    
+      .social-links a {
+        font-size: 14px;
+        padding: 8px;
+      }
+    
+      .item {
+        margin: 8px 0;
+        padding: 8px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+      <div class="profil-image">
+        <img src="assets/images/avatar-jessica.jpeg">
+      </div>
+      <div class="profile-info">
+        <h1>Jessica Randal</h1>
+        <h3>London, United Kingdom </h3>
+        <p>'Fron-tend developer and avid Reader.'</p>
+      </div>
+      <div class="social-links">
+        <a class="item" href="https://github.com/">GitHub</a>
+        <a class="item" href="https://www.frontendmentor.io/home">Frontend Mentor</a>
+        <a class="item" href="https://www.linkedin.com/home?originalSubdomain=fr">linkedIn</a>
+        <a class="item" href="https://x.com/?mx=2">Twitter</a> 
+        <a class="item" href="https://www.instagram.com/accounts/login/">Instagram</a> 
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/biba-sar">Abibatou</a>.
+  </div>
+</body>
+</html>
